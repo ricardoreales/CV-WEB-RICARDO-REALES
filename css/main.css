@@ -778,8 +778,8 @@ svg circle:nth-child(2) {
     justify-content: center;
     flex-direction: column;
     margin: 0px;
-    background: none;
-    box-shadow: none; }
+    background: linear-gradient(180deg, #505050 23%, #2e2e2e 80%);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
     .about_container .container_foto_perfil {
       display: flex;
       justify-content: center;
@@ -797,7 +797,6 @@ svg circle:nth-child(2) {
         .about_container .container_foto_perfil .container_nombre h2 {
           color: #8dc63f; }
     .about_container .container_primario {
-      display: none;
       display: flex;
       flex-direction: column;
       align-items: center; }
@@ -812,28 +811,24 @@ svg circle:nth-child(2) {
           margin: 10px 10px 0px 10px; }
           .about_container .container_primario .datos_container .datos .title_color {
             color: #8dc63f;
-            font-weight: bold;
-            display: none; }
+            font-weight: bold; }
             .about_container .container_primario .datos_container .datos .title_color h4 {
               margin: 10px; }
           .about_container .container_primario .datos_container .datos .text_datos {
             margin-left: 50px;
-            font-weight: lighter;
-            display: none; }
+            font-weight: lighter; }
             .about_container .container_primario .datos_container .datos .text_datos div {
               margin: 10px; }
       .about_container .container_primario hr {
         border: 0.5px solid #8dc63f;
         height: 0;
         width: 95%;
-        margin: 20px;
-        display: none; }
+        margin: 20px; }
       .about_container .container_primario .menu_container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 0px 0px 0px 0px;
-        display: none; }
+        margin: 0px 0px 0px 0px; }
         .about_container .container_primario .menu_container .style_menu {
           display: flex;
           flex-direction: column;
@@ -854,7 +849,6 @@ svg circle:nth-child(2) {
             left: 50%;
             transition: 0.4s; }
           .about_container .container_primario .menu_container .style_menu .icon_menu {
-            display: none;
             width: 100px;
             border-radius: 10PX;
             margin-bottom: 1rem;
@@ -877,14 +871,12 @@ svg circle:nth-child(2) {
               transition: all 0.4s ease-in-out; }
       .about_container .container_primario .redes_Container {
         display: flex;
-        display: none;
         margin-top: 10px;
         margin-bottom: 20px;
         justify-content: space-around;
         width: 300px; }
         .about_container .container_primario .redes_Container .redes {
-          display: flex;
-          display: none; }
+          display: flex; }
           .about_container .container_primario .redes_Container .redes .icono_linkedin {
             box-shadow: inset 0 0 0 0 #0505fa;
             margin: 0 -.25rem;
@@ -926,7 +918,6 @@ svg circle:nth-child(2) {
               width: 29px;
               margin: 15px; }
     .about_container .btn_pricipal {
-      display: none;
       color: white;
       font-weight: bold;
       width: 150px;
@@ -948,6 +939,7 @@ svg circle:nth-child(2) {
     margin-top: 20px;
     display: flex;
     width: 300px;
+    height: 100px;
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -962,7 +954,8 @@ svg circle:nth-child(2) {
     font-weight: 600;
     margin-left: 10px; }
   .container_texto_animado .text.first-text {
-    color: white; }
+    color: white;
+    margin: 5px; }
   .text.sec-text:before {
     content: "";
     position: absolute;
@@ -970,7 +963,7 @@ svg circle:nth-child(2) {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #505050;
+    background-color: #3f4040;
     border-left: 2px solid #8dc63f;
     animation: animate 4s steps(12) infinite; }
   @keyframes animate {

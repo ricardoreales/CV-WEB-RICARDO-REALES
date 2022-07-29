@@ -5,7 +5,9 @@
         height: 50px;
         margin-top: 20px;
         display: flex;
+       
         width: 300px;
+        height: 100px;
         overflow: hidden;
         align-items: center;
         justify-content: center;
@@ -18,8 +20,6 @@
 
     .container_texto_animado .text {
         position: relative;
-       
-
         color: rgba(80, 80, 80, 1) 23%;
         font-size: 20px;
         font-weight: 600;
@@ -29,9 +29,8 @@
 
     .container_texto_animado .text.first-text {
         color: $color-white;
+        margin: 5px;
        
-
-
     }
 
     .text.sec-text:before {
@@ -43,7 +42,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba(80, 80, 80, 1);
+        background-color: #3f4040;
         border-left: 2px solid $color-primario;
         animation: animate 4s steps(12) infinite;
     }
