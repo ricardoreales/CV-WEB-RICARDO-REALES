@@ -1,0 +1,97 @@
+
+.habilidades_container {
+    display: flex;
+    // justify-content: space-between;
+    @include contenedor-section;
+
+
+    .wrap {
+     
+        margin: 70px ;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .tarjeta-wrap {
+        margin: 10px;
+        -webkit-perspective: 800;
+        perspective: 800;
+        &:hover {
+            .tarjeta {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+    .tarjeta {
+        border-radius: 10px;
+        width: 250px;
+        height: 350px;
+        background:$color-primario;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: .7s ease;
+        box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+       
+
+        h3{
+            text-align: center;
+            transform: translate(0,40px);
+        }
+    }
+    .adelante {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .atras {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-family: "open sans";
+        background: $color-secundario;
+        border-radius: 10px;
+        box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+
+        P{
+            text-align: justify;
+        }
+    }
+
+
+
+    .card1 {
+        background-image: url("../iconos/iconos_habilidades-02.svg");
+        background-size: 110px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .card2 {
+        background-image: url("../iconos/iconos_habilidades-03.svg");
+        background-size: 150px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .card3 {
+        background-image: url("../iconos/iconos_habilidades-04.svg");
+        background-size: 150px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+
+}

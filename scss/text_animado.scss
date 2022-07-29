@@ -1,0 +1,45 @@
+
+.container_texto_animado{
+    margin-top: 20px;
+    display: flex;
+    width: 800px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    color: $color-primario;
+    justify-content: flex-start;
+    margin-left: 20px;
+
+}
+.container_texto_animado .text{
+    position: relative;
+    color:rgba(80, 80, 80, 1) 23%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10px;
+
+}
+.container_texto_animado .text.first-text{
+    color:$color-white;
+
+}
+.text.sec-text:before{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(80, 80, 80, 1) ;
+    border-left: 2px solid $color-primario;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}

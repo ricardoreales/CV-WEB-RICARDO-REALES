@@ -1,0 +1,113 @@
+// ESTILOS PARA CONTENEDOR DE LA SECCIONS DE IDIOMAS
+
+.idiomas_container {
+    display: flex;
+    // justify-content: space-between;
+    @include contenedor-section;
+}
+
+
+
+// ESTILOS PARA CIRCULOS DE PORCENTAJE
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+ 
+
+    .cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        text-align: center;
+        transform: translate(110%,-20%);
+        margin: 40px;
+        padding: 20px ;
+        border: 2px solid $gris-2;
+        box-shadow: rgba(234, 234, 234, 0.25) 0px 30px 60px -12px inset, rgba(81, 81, 81, 0.3) 0px 18px 36px -18px inset;
+     
+
+    }
+}
+
+.porcent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: $gris-background;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    .number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        h2 {
+            font-weight: 700;
+            font-size: 40px;
+       
+
+            span {
+                color: $color-white;
+            }
+        }
+    }
+
+
+}
+
+.text_circulo {
+    position: relative;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-85deg) !important;
+
+    circle {
+        width: 100%;
+        height: 100%;
+        fill: none;
+        stroke: $color-white;
+        stroke-width: 10;
+        stroke-linecap: round !important;
+        transform: translate(5px, 5px);
+    }
+}
+
+/*Claculo para simular el porcent*/
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.cart:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 100) / 100);
+    stroke: $color-primario;
+}
+
+.cart:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    stroke: $color-primario;
+}
+
+
+
+
