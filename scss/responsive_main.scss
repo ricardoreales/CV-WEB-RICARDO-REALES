@@ -16,13 +16,13 @@
         .container_foto_perfil {
             display: flex;
             justify-content: center;
-            border: 2px solid red;
+            border: 2px solid rgb(255, 0, 153);
             text-align: center;
-            // background-image: url("../imagenes/perfil\ foto\ -032.jpg");
-            background-size: cover;
-
-            background-repeat: no-repeat;
-            height: 100vh;
+            background-image: none;
+            background-size: none;
+            background-position: center;
+            background-repeat: none;
+            height: 700px;
             width: auto;
 
             // background-position: 50% 100%;
@@ -51,6 +51,7 @@
             .datos_container {
 
                 .datos {
+                    font-size: 14px;
                     display: flex;
                     margin: 10px 10px 0px 10px;
 
@@ -77,7 +78,7 @@
             hr {
                 border: 0.5px solid $color-primario;
                 height: 0;
-                width: 92%;
+                width: 50%;
                 margin: 20px;
 
             }
@@ -87,6 +88,7 @@
                 flex-wrap: wrap;
                 margin: 0px 0px 0px 0px;
                 justify-content: space-between;
+                width: 350px;
 
                 .style_menu {
                     display: flex;
