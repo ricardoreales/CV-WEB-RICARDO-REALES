@@ -23,7 +23,6 @@
             // background-position: 50% 100%;
             .container_nombre {
 
-                border: 2px solid rgb(0, 153, 255);
                 position: relative;
                 top: 600px;
                 width: 300px;
@@ -40,6 +39,8 @@
 
 
         .container_primario {
+            display: none;
+
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -83,6 +84,8 @@
                 height: 0;
                 width: 95%;
                 margin: 20px;
+                display: none;
+
 
             }
 
@@ -132,6 +135,8 @@
                     }
 
                     .icon_menu {
+                        display: none;
+
                         width: 100px;
                         border-radius: 10PX;
                         margin-bottom: 1rem;
@@ -162,7 +167,10 @@
 
 
             .redes_Container {
+             
+
                 display: flex;
+                display: none;
                 margin-top: 10px;
                 margin-bottom: 20px;
                 justify-content: space-around;
@@ -171,6 +179,7 @@
 
                 .redes {
                     display: flex;
+                    display: none;
 
                     .icono_linkedin {
                         box-shadow: inset 0 0 0 0 #0505fa;
@@ -246,6 +255,7 @@
 
 
         .btn_pricipal {
+            display: none;
             color: $color-white;
             font-weight: bold;
             width: 150px;
