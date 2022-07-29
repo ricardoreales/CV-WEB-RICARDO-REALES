@@ -1,0 +1,265 @@
+
+
+
+
+@media (max-width: 768px) {
+
+
+    .about_container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @include contenedor-section_responsive;
+        
+
+
+        .container_foto_perfil {
+            display: flex;
+            justify-content: center;
+            border: 2px solid red;
+            text-align: center;
+            // background-image: url("../imagenes/perfil\ foto\ -032.jpg");
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: auto;
+
+            // background-position: 50% 100%;
+            .container_nombre {
+                border: 2px solid rgb(0, 153, 255);
+                position: relative;
+                top: 450px;
+                width: 300px;
+                height: 80px;
+
+
+
+                h2 {
+                    color: $color-primario;
+                }
+            }
+
+        }
+
+
+        .container_primario {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+
+            .datos_container {
+
+                .datos {
+                    display: flex;
+                    margin: 10px 10px 0px 10px;
+
+                    .title_color {
+                        color: $color-primario;
+                        font-weight: bold;
+
+                        h4 {
+                            margin: 10px;
+                        }
+                    }
+
+                    .text_datos {
+                        margin-left: 50px;
+                        font-weight: lighter;
+
+                        div {
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+
+            hr {
+                border: 0.5px solid $color-primario;
+                height: 0;
+                width: 92%;
+                margin: 20px;
+
+            }
+
+            .menu_container {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0px 0px 0px 0px;
+                justify-content: space-between;
+
+                .style_menu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 25px;
+
+                    &:hover {
+                        cursor: pointer;
+
+                        .icon_menu {
+                            background-color: $color-secundario;
+
+                        }
+
+                        h3 {
+                            &::after {
+                                width: 100%;
+                                left: 0;
+                            }
+                        }
+                    }
+
+                    &:active {
+                        .icon_menu {
+                            transform: scale(0.9);
+                            transition: 0.4s;
+                        }
+
+                        h3 {
+                            &::after {
+                                width: 0%;
+                                left: 50%;
+                                transition: 0.4s;
+                            }
+                        }
+                    }
+
+                    .icon_menu {
+                        width: 100px;
+                        border-radius: 10PX;
+                        margin-bottom: 1rem;
+                        background-color: $color-primario;
+                        margin: 0 -.25rem;
+                        padding: 0 .25rem;
+                        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+                        box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+                    }
+
+                    h3 {
+                        margin-top: 10px;
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            width: 0%;
+                            height: 4px;
+                            background-color: $color-primario;
+                            left: 50%;
+                            bottom: -10px;
+                            transition: all 0.4s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+
+            .redes_Container {
+                display: flex;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                justify-content: space-around;
+
+                .redes {
+                    display: flex;
+
+                    .icono_linkedin {
+                        box-shadow: inset 0 0 0 0 #0505fa;
+                        margin: 0 -.25rem;
+                        padding: 0 .25rem;
+                        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+                        &:hover {
+                            box-shadow: inset 100px 0 0 0 #07176e;
+                        }
+
+                        img {
+                            width: 29px;
+                            margin: 15px;
+                        }
+                    }
+
+                    .icono_github {
+                        box-shadow: inset 0 0 0 0 #a600ff;
+                        margin: 0 -.25rem;
+                        padding: 0 .25rem;
+                        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+                        &:hover {
+                            box-shadow: inset 0 100px 0 0 #7f00df;
+                        }
+
+                        img {
+                            width: 29px;
+                            margin: 15px;
+                        }
+                    }
+
+                    .icono_facebook {
+                        box-shadow: inset 0 0 0 0 #62d5ff;
+                        margin: 0 -.25rem;
+                        padding: 0 .25rem;
+                        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+                        &:hover {
+                            box-shadow: inset -100px 0 0 0 #1051b2;
+                        }
+
+                        img {
+                            width: 29px;
+                            margin: 15px;
+                        }
+                    }
+
+                    .icono_whatsapp {
+                        box-shadow: inset 0 0 0 0 #b8cc00;
+                        margin: 0 -.25rem;
+                        padding: 0 .25rem;
+                        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+                        &:hover {
+                            box-shadow: inset 0 -100px 0 0 #30a800;
+                        }
+
+                        img {
+                            width: 29px;
+                            margin: 15px;
+                        }
+                    }
+
+                }
+
+
+            }
+
+
+        }
+
+
+        .btn_pricipal {
+            color: $color-white;
+            font-weight: bold;
+            width: 150px;
+            border-radius: 10PX;
+            margin-bottom: 1rem;
+            background-color: $color-primario;
+            padding: 10px;
+            transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+            box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+
+            &:hover {
+                background-color: $color-secundario;
+            }
+
+            &:active {
+                transform: scale(0.9);
+                transition: 0.4s;
+            }
+        }
+    }
+
+
+
+
+}

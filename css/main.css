@@ -770,3 +770,196 @@ svg circle:nth-child(2) {
     left: calc(100% + 4px); }
   100% {
     left: 0%; } }
+
+@media (max-width: 768px) {
+  .about_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+    background: linear-gradient(180deg, #505050 23%, #2e2e2e 80%);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
+    .about_container .container_foto_perfil {
+      display: flex;
+      justify-content: center;
+      border: 2px solid red;
+      text-align: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: auto; }
+      .about_container .container_foto_perfil .container_nombre {
+        border: 2px solid #0099ff;
+        position: relative;
+        top: 450px;
+        width: 300px;
+        height: 80px; }
+        .about_container .container_foto_perfil .container_nombre h2 {
+          color: #8dc63f; }
+    .about_container .container_primario {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch; }
+      .about_container .container_primario .datos_container .datos {
+        display: flex;
+        margin: 10px 10px 0px 10px; }
+        .about_container .container_primario .datos_container .datos .title_color {
+          color: #8dc63f;
+          font-weight: bold; }
+          .about_container .container_primario .datos_container .datos .title_color h4 {
+            margin: 10px; }
+        .about_container .container_primario .datos_container .datos .text_datos {
+          margin-left: 50px;
+          font-weight: lighter; }
+          .about_container .container_primario .datos_container .datos .text_datos div {
+            margin: 10px; }
+      .about_container .container_primario hr {
+        border: 0.5px solid #8dc63f;
+        height: 0;
+        width: 92%;
+        margin: 20px; }
+      .about_container .container_primario .menu_container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 0px 0px 0px;
+        justify-content: space-between; }
+        .about_container .container_primario .menu_container .style_menu {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 25px; }
+          .about_container .container_primario .menu_container .style_menu:hover {
+            cursor: pointer; }
+            .about_container .container_primario .menu_container .style_menu:hover .icon_menu {
+              background-color: #4f8702; }
+            .about_container .container_primario .menu_container .style_menu:hover h3::after {
+              width: 100%;
+              left: 0; }
+          .about_container .container_primario .menu_container .style_menu:active .icon_menu {
+            transform: scale(0.9);
+            transition: 0.4s; }
+          .about_container .container_primario .menu_container .style_menu:active h3::after {
+            width: 0%;
+            left: 50%;
+            transition: 0.4s; }
+          .about_container .container_primario .menu_container .style_menu .icon_menu {
+            width: 100px;
+            border-radius: 10PX;
+            margin-bottom: 1rem;
+            background-color: #8dc63f;
+            margin: 0 -.25rem;
+            padding: 0 .25rem;
+            transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+            box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); }
+          .about_container .container_primario .menu_container .style_menu h3 {
+            margin-top: 10px;
+            position: relative; }
+            .about_container .container_primario .menu_container .style_menu h3::after {
+              position: absolute;
+              content: "";
+              width: 0%;
+              height: 4px;
+              background-color: #8dc63f;
+              left: 50%;
+              bottom: -10px;
+              transition: all 0.4s ease-in-out; }
+      .about_container .container_primario .redes_Container {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        justify-content: space-around; }
+        .about_container .container_primario .redes_Container .redes {
+          display: flex; }
+          .about_container .container_primario .redes_Container .redes .icono_linkedin {
+            box-shadow: inset 0 0 0 0 #0505fa;
+            margin: 0 -.25rem;
+            padding: 0 .25rem;
+            transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
+            .about_container .container_primario .redes_Container .redes .icono_linkedin:hover {
+              box-shadow: inset 100px 0 0 0 #07176e; }
+            .about_container .container_primario .redes_Container .redes .icono_linkedin img {
+              width: 29px;
+              margin: 15px; }
+          .about_container .container_primario .redes_Container .redes .icono_github {
+            box-shadow: inset 0 0 0 0 #a600ff;
+            margin: 0 -.25rem;
+            padding: 0 .25rem;
+            transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
+            .about_container .container_primario .redes_Container .redes .icono_github:hover {
+              box-shadow: inset 0 100px 0 0 #7f00df; }
+            .about_container .container_primario .redes_Container .redes .icono_github img {
+              width: 29px;
+              margin: 15px; }
+          .about_container .container_primario .redes_Container .redes .icono_facebook {
+            box-shadow: inset 0 0 0 0 #62d5ff;
+            margin: 0 -.25rem;
+            padding: 0 .25rem;
+            transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
+            .about_container .container_primario .redes_Container .redes .icono_facebook:hover {
+              box-shadow: inset -100px 0 0 0 #1051b2; }
+            .about_container .container_primario .redes_Container .redes .icono_facebook img {
+              width: 29px;
+              margin: 15px; }
+          .about_container .container_primario .redes_Container .redes .icono_whatsapp {
+            box-shadow: inset 0 0 0 0 #b8cc00;
+            margin: 0 -.25rem;
+            padding: 0 .25rem;
+            transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
+            .about_container .container_primario .redes_Container .redes .icono_whatsapp:hover {
+              box-shadow: inset 0 -100px 0 0 #30a800; }
+            .about_container .container_primario .redes_Container .redes .icono_whatsapp img {
+              width: 29px;
+              margin: 15px; }
+    .about_container .btn_pricipal {
+      color: white;
+      font-weight: bold;
+      width: 150px;
+      border-radius: 10PX;
+      margin-bottom: 1rem;
+      background-color: #8dc63f;
+      padding: 10px;
+      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+      box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); }
+      .about_container .btn_pricipal:hover {
+        background-color: #4f8702; }
+      .about_container .btn_pricipal:active {
+        transform: scale(0.9);
+        transition: 0.4s; } }
+
+@media (max-width: 768px) {
+  .container_texto_animado {
+    display: none;
+    margin-top: 20px;
+    display: flex;
+    width: 800px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    color: #8dc63f;
+    justify-content: flex-start;
+    margin-left: 20px; }
+  .container_texto_animado .text {
+    position: relative;
+    display: none;
+    color: #505050 23%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10px; }
+  .container_texto_animado .text.first-text {
+    color: white; }
+  .text.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #505050;
+    border-left: 2px solid #8dc63f;
+    animation: animate 4s steps(12) infinite; }
+  @keyframes animate {
+    40%,
+    60% {
+      left: calc(100% + 4px); }
+    100% {
+      left: 0%; } } }
