@@ -19,17 +19,17 @@
             background-image: url("../imagenes/perfil\ foto\ -032.jpg");
             background-size: cover;
             background-position: center;
-            width: 448px;
+         
             height: 700px;
             width: 100vw;
             margin: 0px;
 
             // background-position: 50% 100%;
             .container_nombre {
-                display: none;
+               
                 border: 2px solid rgb(0, 153, 255);
                 position: relative;
-                top: 450px;
+                top: 600px;
                 width: 300px;
                 height: 80px;
 
@@ -46,10 +46,16 @@
         .container_primario {
             display: flex;
             flex-direction: column;
-            align-items: stretch;
+            align-items: center;
+            
 
             .datos_container {
-                width: 300px;
+                display: flex;
+                width: 500px;
+                justify-content: center;
+                flex-direction: column;
+                
+                
 
 
                 .datos {
@@ -61,6 +67,7 @@
                         color: $color-primario;
                         font-weight: bold;
 
+
                         h4 {
                             margin: 10px;
                         }
@@ -69,6 +76,7 @@
                     .text_datos {
                         margin-left: 50px;
                         font-weight: lighter;
+
 
                         div {
                             margin: 10px;
@@ -80,17 +88,18 @@
             hr {
                 border: 0.5px solid $color-primario;
                 height: 0;
-                width: 50%;
+                width: 95%;
                 margin: 20px;
 
             }
 
             .menu_container {
                 display: flex;
+                justify-content: center;
                 flex-wrap: wrap;
                 margin: 0px 0px 0px 0px;
-                justify-content: space-between;
-                width: 350px;
+               
+               
 
                 .style_menu {
                     display: flex;

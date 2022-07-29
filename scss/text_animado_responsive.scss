@@ -1,21 +1,23 @@
 @media (max-width: 768px) {
     .container_texto_animado {
-        display: none;
+      
+        height: 50px;
         margin-top: 20px;
         display: flex;
-        width: 800px;
+        width: 500px;
         overflow: hidden;
         align-items: center;
         justify-content: center;
         color: $color-primario;
         justify-content: flex-start;
         margin-left: 20px;
+        z-index: 100;
 
     }
 
     .container_texto_animado .text {
         position: relative;
-        display: none;
+        // display: none;
 
         color: rgba(80, 80, 80, 1) 23%;
         font-size: 30px;

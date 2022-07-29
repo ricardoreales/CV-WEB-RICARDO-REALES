@@ -786,15 +786,13 @@ svg circle:nth-child(2) {
       background-image: url("../imagenes/perfil foto -032.jpg");
       background-size: cover;
       background-position: center;
-      width: 448px;
       height: 700px;
       width: 100vw;
       margin: 0px; }
       .about_container .container_foto_perfil .container_nombre {
-        display: none;
         border: 2px solid #0099ff;
         position: relative;
-        top: 450px;
+        top: 600px;
         width: 300px;
         height: 80px; }
         .about_container .container_foto_perfil .container_nombre h2 {
@@ -802,9 +800,12 @@ svg circle:nth-child(2) {
     .about_container .container_primario {
       display: flex;
       flex-direction: column;
-      align-items: stretch; }
+      align-items: center; }
       .about_container .container_primario .datos_container {
-        width: 300px; }
+        display: flex;
+        width: 500px;
+        justify-content: center;
+        flex-direction: column; }
         .about_container .container_primario .datos_container .datos {
           font-size: 14px;
           display: flex;
@@ -822,14 +823,13 @@ svg circle:nth-child(2) {
       .about_container .container_primario hr {
         border: 0.5px solid #8dc63f;
         height: 0;
-        width: 50%;
+        width: 95%;
         margin: 20px; }
       .about_container .container_primario .menu_container {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        margin: 0px 0px 0px 0px;
-        justify-content: space-between;
-        width: 350px; }
+        margin: 0px 0px 0px 0px; }
         .about_container .container_primario .menu_container .style_menu {
           display: flex;
           flex-direction: column;
@@ -936,19 +936,19 @@ svg circle:nth-child(2) {
 
 @media (max-width: 768px) {
   .container_texto_animado {
-    display: none;
+    height: 50px;
     margin-top: 20px;
     display: flex;
-    width: 800px;
+    width: 500px;
     overflow: hidden;
     align-items: center;
     justify-content: center;
     color: #8dc63f;
     justify-content: flex-start;
-    margin-left: 20px; }
+    margin-left: 20px;
+    z-index: 100; }
   .container_texto_animado .text {
     position: relative;
-    display: none;
     color: #505050 23%;
     font-size: 30px;
     font-weight: 600;
