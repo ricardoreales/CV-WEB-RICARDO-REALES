@@ -1,7 +1,7 @@
 @media (max-width: 600px) {
     .container_texto_animado {
-        display: none;
       
+
         height: 50px;
         margin-top: 20px;
         display: flex;
@@ -18,7 +18,7 @@
 
     .container_texto_animado .text {
         position: relative;
-        display: none;
+       
 
         color: rgba(80, 80, 80, 1) 23%;
         font-size: 20px;
@@ -29,10 +29,13 @@
 
     .container_texto_animado .text.first-text {
         color: $color-white;
+       
+
 
     }
 
     .text.sec-text:before {
+       
 
         content: "";
         position: absolute;

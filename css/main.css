@@ -944,7 +944,6 @@ svg circle:nth-child(2) {
 
 @media (max-width: 600px) {
   .container_texto_animado {
-    display: none;
     height: 50px;
     margin-top: 20px;
     display: flex;
@@ -958,7 +957,6 @@ svg circle:nth-child(2) {
     z-index: 100; }
   .container_texto_animado .text {
     position: relative;
-    display: none;
     color: #505050 23%;
     font-size: 20px;
     font-weight: 600;
