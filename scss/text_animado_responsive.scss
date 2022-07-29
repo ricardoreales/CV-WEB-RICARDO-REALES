@@ -1,10 +1,11 @@
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container_texto_animado {
+        display: none;
       
         height: 50px;
         margin-top: 20px;
         display: flex;
-        width: 500px;
+        width: 350px;
         overflow: hidden;
         align-items: center;
         justify-content: center;
@@ -17,10 +18,10 @@
 
     .container_texto_animado .text {
         position: relative;
-        // display: none;
+        display: none;
 
         color: rgba(80, 80, 80, 1) 23%;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 600;
         margin-left: 10px;
 

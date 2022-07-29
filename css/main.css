@@ -772,7 +772,7 @@ svg circle:nth-child(2) {
   100% {
     left: 0%; } }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .about_container {
     display: flex;
     justify-content: center;
@@ -803,7 +803,7 @@ svg circle:nth-child(2) {
       align-items: center; }
       .about_container .container_primario .datos_container {
         display: flex;
-        width: 500px;
+        width: 400px;
         justify-content: center;
         flex-direction: column; }
         .about_container .container_primario .datos_container .datos {
@@ -812,12 +812,14 @@ svg circle:nth-child(2) {
           margin: 10px 10px 0px 10px; }
           .about_container .container_primario .datos_container .datos .title_color {
             color: #8dc63f;
-            font-weight: bold; }
+            font-weight: bold;
+            display: none; }
             .about_container .container_primario .datos_container .datos .title_color h4 {
               margin: 10px; }
           .about_container .container_primario .datos_container .datos .text_datos {
             margin-left: 50px;
-            font-weight: lighter; }
+            font-weight: lighter;
+            display: none; }
             .about_container .container_primario .datos_container .datos .text_datos div {
               margin: 10px; }
       .about_container .container_primario hr {
@@ -829,12 +831,13 @@ svg circle:nth-child(2) {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 0px 0px 0px 0px; }
+        margin: 0px 0px 0px 0px;
+        display: none; }
         .about_container .container_primario .menu_container .style_menu {
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin: 25px; }
+          margin: 15px; }
           .about_container .container_primario .menu_container .style_menu:hover {
             cursor: pointer; }
             .about_container .container_primario .menu_container .style_menu:hover .icon_menu {
@@ -934,12 +937,13 @@ svg circle:nth-child(2) {
         transform: scale(0.9);
         transition: 0.4s; } }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .container_texto_animado {
+    display: none;
     height: 50px;
     margin-top: 20px;
     display: flex;
-    width: 500px;
+    width: 350px;
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -949,8 +953,9 @@ svg circle:nth-child(2) {
     z-index: 100; }
   .container_texto_animado .text {
     position: relative;
+    display: none;
     color: #505050 23%;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     margin-left: 10px; }
   .container_texto_animado .text.first-text {

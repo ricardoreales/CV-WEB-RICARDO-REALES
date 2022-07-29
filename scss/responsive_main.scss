@@ -1,8 +1,4 @@
-
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
 
     .about_container {
@@ -10,7 +6,7 @@
         justify-content: center;
         flex-direction: column;
         @include contenedor-section_responsive;
-        
+
 
 
         .container_foto_perfil {
@@ -19,14 +15,14 @@
             background-image: url("../imagenes/perfil\ foto\ -032.jpg");
             background-size: cover;
             background-position: center;
-         
+
             height: 700px;
             width: 100vw;
             margin: 0px;
 
             // background-position: 50% 100%;
             .container_nombre {
-               
+
                 border: 2px solid rgb(0, 153, 255);
                 position: relative;
                 top: 600px;
@@ -47,16 +43,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            
 
             .datos_container {
                 display: flex;
-                width: 500px;
+                width: 400px;
                 justify-content: center;
                 flex-direction: column;
-                
-                
-
 
                 .datos {
                     font-size: 14px;
@@ -66,7 +58,7 @@
                     .title_color {
                         color: $color-primario;
                         font-weight: bold;
-
+                        display: none;
 
                         h4 {
                             margin: 10px;
@@ -76,6 +68,7 @@
                     .text_datos {
                         margin-left: 50px;
                         font-weight: lighter;
+                        display: none;
 
 
                         div {
@@ -98,14 +91,14 @@
                 justify-content: center;
                 flex-wrap: wrap;
                 margin: 0px 0px 0px 0px;
-               
-               
+                display: none;
+
 
                 .style_menu {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin: 25px;
+                    margin: 15px;
 
                     &:hover {
                         cursor: pointer;
