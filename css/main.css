@@ -44,7 +44,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 25px; }
+        margin: 25px;
+        width: 150px; }
         .about_container .container_primario .menu_container .style_menu:hover {
           cursor: pointer; }
           .about_container .container_primario .menu_container .style_menu:hover .icon_menu {
@@ -782,15 +783,15 @@ svg circle:nth-child(2) {
     .about_container .container_foto_perfil {
       display: flex;
       justify-content: center;
-      border: 2px solid #ff0099;
-      text-align: center;
-      background-image: none;
-      background-size: none;
+      background-image: url("../imagenes/perfil foto -032.jpg");
+      background-size: cover;
       background-position: center;
-      background-repeat: none;
+      width: 448px;
       height: 700px;
-      width: auto; }
+      width: 100vw;
+      margin: 0px; }
       .about_container .container_foto_perfil .container_nombre {
+        display: none;
         border: 2px solid #0099ff;
         position: relative;
         top: 450px;
@@ -802,20 +803,22 @@ svg circle:nth-child(2) {
       display: flex;
       flex-direction: column;
       align-items: stretch; }
-      .about_container .container_primario .datos_container .datos {
-        font-size: 14px;
-        display: flex;
-        margin: 10px 10px 0px 10px; }
-        .about_container .container_primario .datos_container .datos .title_color {
-          color: #8dc63f;
-          font-weight: bold; }
-          .about_container .container_primario .datos_container .datos .title_color h4 {
-            margin: 10px; }
-        .about_container .container_primario .datos_container .datos .text_datos {
-          margin-left: 50px;
-          font-weight: lighter; }
-          .about_container .container_primario .datos_container .datos .text_datos div {
-            margin: 10px; }
+      .about_container .container_primario .datos_container {
+        width: 300px; }
+        .about_container .container_primario .datos_container .datos {
+          font-size: 14px;
+          display: flex;
+          margin: 10px 10px 0px 10px; }
+          .about_container .container_primario .datos_container .datos .title_color {
+            color: #8dc63f;
+            font-weight: bold; }
+            .about_container .container_primario .datos_container .datos .title_color h4 {
+              margin: 10px; }
+          .about_container .container_primario .datos_container .datos .text_datos {
+            margin-left: 50px;
+            font-weight: lighter; }
+            .about_container .container_primario .datos_container .datos .text_datos div {
+              margin: 10px; }
       .about_container .container_primario hr {
         border: 0.5px solid #8dc63f;
         height: 0;
@@ -871,7 +874,8 @@ svg circle:nth-child(2) {
         display: flex;
         margin-top: 10px;
         margin-bottom: 20px;
-        justify-content: space-around; }
+        justify-content: space-around;
+        width: 300px; }
         .about_container .container_primario .redes_Container .redes {
           display: flex; }
           .about_container .container_primario .redes_Container .redes .icono_linkedin {

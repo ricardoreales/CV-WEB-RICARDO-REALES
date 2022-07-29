@@ -16,17 +16,17 @@
         .container_foto_perfil {
             display: flex;
             justify-content: center;
-            border: 2px solid rgb(255, 0, 153);
-            text-align: center;
-            background-image: none;
-            background-size: none;
+            background-image: url("../imagenes/perfil\ foto\ -032.jpg");
+            background-size: cover;
             background-position: center;
-            background-repeat: none;
+            width: 448px;
             height: 700px;
-            width: auto;
+            width: 100vw;
+            margin: 0px;
 
             // background-position: 50% 100%;
             .container_nombre {
+                display: none;
                 border: 2px solid rgb(0, 153, 255);
                 position: relative;
                 top: 450px;
@@ -49,6 +49,8 @@
             align-items: stretch;
 
             .datos_container {
+                width: 300px;
+
 
                 .datos {
                     font-size: 14px;
@@ -162,6 +164,8 @@
                 margin-top: 10px;
                 margin-bottom: 20px;
                 justify-content: space-around;
+                width: 300px;
+
 
                 .redes {
                     display: flex;
