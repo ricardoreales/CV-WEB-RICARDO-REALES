@@ -811,12 +811,12 @@ svg circle:nth-child(2) {
       background-image: url("../imagenes/perfil foto -032.jpg");
       background-size: cover;
       background-position: center;
-      height: 700px;
+      height: 650px;
       width: 100vw;
       margin: 0px; }
       .about_container .container_foto_perfil .container_nombre {
         position: relative;
-        top: 600px;
+        top: 500px;
         width: 300px;
         height: 80px; }
         .about_container .container_foto_perfil .container_nombre h2 {
