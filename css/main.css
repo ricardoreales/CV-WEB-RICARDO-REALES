@@ -5,15 +5,16 @@
   background: linear-gradient(180deg, #505050 23%, #2e2e2e 80%);
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
   .about_container .container_foto_perfil {
+    display: flex;
+    justify-content: center;
     text-align: center;
     background-image: url("../imagenes/perfil foto -032.jpg");
     background-size: cover;
-    width: 448px; }
+    background-position: center;
+    width: 100vw; }
     .about_container .container_foto_perfil .container_nombre {
       position: relative;
-      top: 450px; }
-      .about_container .container_foto_perfil .container_nombre h2 {
-        color: #8dc63f; }
+      top: 400px; }
   .about_container .container_primario {
     display: flex;
     flex-direction: column;
@@ -35,7 +36,7 @@
     .about_container .container_primario hr {
       border: 0.5px solid #8dc63f;
       height: 0;
-      width: 92%;
+      width: 80%;
       margin: 20px; }
     .about_container .container_primario .menu_container {
       display: flex;
@@ -46,7 +47,7 @@
         flex-direction: column;
         align-items: center;
         margin: 25px;
-        width: 150px; }
+        width: 100px; }
         .about_container .container_primario .menu_container .style_menu:hover {
           cursor: pointer; }
           .about_container .container_primario .menu_container .style_menu:hover .icon_menu {
@@ -129,7 +130,10 @@
           .about_container .container_primario .redes_Container .redes .icono_whatsapp img {
             width: 29px;
             margin: 15px; }
-      .about_container .container_primario .redes_Container .btn_pricipal {
+    .about_container .container_primario .btnc_container {
+      display: flex;
+      justify-content: center; }
+      .about_container .container_primario .btnc_container .btn_pricipal {
         color: white;
         font-weight: bold;
         width: 150px;
@@ -139,9 +143,9 @@
         padding: 10px;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
         box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); }
-        .about_container .container_primario .redes_Container .btn_pricipal:hover {
+        .about_container .container_primario .btnc_container .btn_pricipal:hover {
           background-color: #4f8702; }
-        .about_container .container_primario .redes_Container .btn_pricipal:active {
+        .about_container .container_primario .btnc_container .btn_pricipal:active {
           transform: scale(0.9);
           transition: 0.4s; }
 
@@ -742,8 +746,9 @@ svg circle:nth-child(2) {
   padding: 30px;
   color: #8dc63f;
   /*centers it in the .banner*/
-  position: absolute;
-  top: 50%;
+  position: relative;
+  text-align: center;
+  top: 17px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -834,11 +839,15 @@ svg circle:nth-child(2) {
             font-weight: bold; }
             .about_container .container_primario .datos_container .datos .title_color h4 {
               margin: 10px; }
+            .about_container .container_primario .datos_container .datos .title_color .email {
+              display: none; }
           .about_container .container_primario .datos_container .datos .text_datos {
             margin-left: 50px;
             font-weight: lighter; }
             .about_container .container_primario .datos_container .datos .text_datos div {
               margin: 10px; }
+            .about_container .container_primario .datos_container .datos .text_datos .email {
+              display: none; }
       .about_container .container_primario hr {
         border: 0.5px solid #8dc63f;
         height: 0;
@@ -972,3 +981,200 @@ svg circle:nth-child(2) {
     transform: translate(-50%, -50%); }
   .typed_wrap h1 {
     display: inline; } }
+
+@media (max-width: 600px) {
+  .conocimientos_container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0px;
+    background: linear-gradient(180deg, #505050 23%, #2e2e2e 80%);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
+    .conocimientos_container .conocimientos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw; }
+      .conocimientos_container .conocimientos .progresBar__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        margin: 0px 0px 0px 0px; }
+        .conocimientos_container .conocimientos .progresBar__container .progress {
+          position: relative;
+          width: 300px;
+          height: 20px;
+          background: grey;
+          border-radius: 5px;
+          overflow: hidden;
+          margin: 5px;
+          border: 2px solid white; }
+          .conocimientos_container .conocimientos .progresBar__container .progress .progress__fill {
+            width: 0%;
+            height: 100%;
+            background: #8dc63f;
+            transition: all 7s; }
+          .conocimientos_container .conocimientos .progresBar__container .progress .progress__text {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translatey(-50%); } }
+
+@media (max-width: 600px) {
+  .banner_icon_conocimientos {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 15vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #191919; }
+    .banner_icon_conocimientos h2 {
+      margin: 10px;
+      font-size: 1.4rem;
+      width: 300px;
+      border: 1px solid red; }
+    .banner_icon_conocimientos .container_img {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      .banner_icon_conocimientos .container_img .media_img {
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translate(20%, 0%); }
+        .banner_icon_conocimientos .container_img .media_img::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-image: url("../iconos/iconosMenu-web.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+          background-position: center 80%; }
+  .banner_icon_idiomas {
+    width: 300px;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #191919; }
+    .banner_icon_idiomas h2 {
+      margin: 10px;
+      font-size: 1.4rem; }
+    .banner_icon_idiomas .container_img {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      .banner_icon_idiomas .container_img .media_img {
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+        .banner_icon_idiomas .container_img .media_img::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-image: url("../iconos/iconosMenu-idioma.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+          background-position: center 80%; }
+  .banner_icon_habilidades {
+    width: 300px;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #191919; }
+    .banner_icon_habilidades h2 {
+      margin: 10px;
+      font-size: 1.4rem; }
+    .banner_icon_habilidades .container_img {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      .banner_icon_habilidades .container_img .media_img {
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+        .banner_icon_habilidades .container_img .media_img::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-image: url("../iconos/iconosMenu-habilidad.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+          background-position: center 80%; }
+  .banner_icon_experiencia {
+    width: 300px;
+    height: 180vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #191919; }
+    .banner_icon_experiencia h2 {
+      margin: 10px;
+      font-size: 1.4rem; }
+    .banner_icon_experiencia .container_img {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      .banner_icon_experiencia .container_img .media_img {
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+        .banner_icon_experiencia .container_img .media_img::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-image: url("../iconos/iconosMenu-experiencia.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+          background-position: center 80%; }
+  .banner_icon_portafolio {
+    width: 300px;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #191919; }
+    .banner_icon_portafolio h2 {
+      margin: 10px;
+      font-size: 1.4rem; }
+    .banner_icon_portafolio .container_img {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      .banner_icon_portafolio .container_img .media_img {
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+        .banner_icon_portafolio .container_img .media_img::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-image: url("../iconos/iconosMenu-portafolio.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+          background-position: center 80%; } }

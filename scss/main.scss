@@ -4,19 +4,21 @@
 
 
     .container_foto_perfil {
+        display: flex;
+        justify-content: center;
         text-align: center;
         background-image: url("../imagenes/perfil\ foto\ -032.jpg");
         background-size: cover;
-        width: 448px;
+        background-position: center;
+        width: 100vw;
+
 
         // background-position: 50% 100%;
         .container_nombre {
             position: relative;
-            top: 450px;
+            top: 400px;
 
-            h2 {
-                color: $color-primario;
-            }
+
         }
 
     }
@@ -26,6 +28,7 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
+
 
         .datos_container {
 
@@ -45,7 +48,7 @@
                 .text_datos {
                     margin-left: 50px;
                     font-weight: lighter;
-                    color: $color-white !important;
+                    color: $color-white  !important;
 
                     div {
                         margin: 10px;
@@ -57,7 +60,7 @@
         hr {
             border: 0.5px solid $color-primario;
             height: 0;
-            width: 92%;
+            width: 80%;
             margin: 20px;
 
         }
@@ -72,8 +75,8 @@
                 flex-direction: column;
                 align-items: center;
                 margin: 25px;
-                width: 150px;
-           
+                width: 100px;
+
 
                 &:hover {
                     cursor: pointer;
@@ -215,6 +218,13 @@
 
 
             }
+
+
+        }
+
+        .btnc_container {
+            display: flex;
+            justify-content: center;
 
             .btn_pricipal {
                 color: $color-white;

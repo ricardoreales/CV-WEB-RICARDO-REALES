@@ -15,7 +15,6 @@
             background-image: url("../imagenes/perfil\ foto\ -032.jpg");
             background-size: cover;
             background-position: center;
-
             height: 700px;
             width: 100vw;
             margin: 0px;
@@ -62,6 +61,10 @@
                         h4 {
                             margin: 10px;
                         }
+
+                        .email{
+                            display: none;
+                        }
                     }
 
                     .text_datos {
@@ -72,6 +75,10 @@
 
                         div {
                             margin: 10px;
+                        }
+
+                        .email{
+                            display: none;
                         }
                     }
                 }

@@ -5,8 +5,10 @@
 	padding: 30px;
 	color: $color-primario;
 	/*centers it in the .banner*/
-	position: absolute;
-	top: 50%;
+	position: relative;
+	text-align: center;
+	top: 17px;
+
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
