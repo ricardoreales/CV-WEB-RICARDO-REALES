@@ -28,7 +28,8 @@
           margin: 10px; }
       .about_container .container_primario .datos_container .datos .text_datos {
         margin-left: 50px;
-        font-weight: lighter; }
+        font-weight: lighter;
+        color: white !important; }
         .about_container .container_primario .datos_container .datos .text_datos div {
           margin: 10px; }
     .about_container .container_primario hr {
@@ -954,7 +955,6 @@ svg circle:nth-child(2) {
 
 @media (max-width: 600px) {
   .typed_wrap {
-    border: 1px solid red;
     display: block;
     width: 290px;
     height: auto;
