@@ -16,7 +16,7 @@ function scrollFunction() {
 
 
 
-    if ((screen.width <= 600 && scroll > 300 && scroll < 3000) || (screen.width > 600 && scroll > 150 && scroll < 1000) ){
+    if ((screen.width <= 600 && scroll > 600 && scroll < 3000) || (screen.width > 600 && scroll > 150 && scroll < 1000) ){
         elemProgress.forEach(function(element) {
             updateprogressBar(element, element.getAttribute("data-value")) 
         });
