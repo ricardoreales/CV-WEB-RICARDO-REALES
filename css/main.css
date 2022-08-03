@@ -1030,12 +1030,12 @@ svg circle:nth-child(2) {
     height: 15vh;
     overflow: hidden;
     position: relative;
+    align-items: center;
     background-color: #191919; }
     .banner_icon_conocimientos h2 {
       margin: 10px;
       font-size: 1.4rem;
-      width: 300px;
-      border: 1px solid red; }
+      width: 300px; }
     .banner_icon_conocimientos .container_img {
       position: absolute;
       width: 100%;
