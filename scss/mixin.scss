@@ -1,5 +1,5 @@
-@mixin  contenedor-section {
-   
+@mixin contenedor-section {
+
     margin: 30px 60px 30px 60px;
     background: linear-gradient(180deg, rgba(80, 80, 80, 1) 23%, rgba(46, 46, 46, 1) 80%);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
@@ -7,10 +7,10 @@
 
 
 
-@mixin  contenedor-section_responsive {
-   
+@mixin contenedor-section_responsive {
+
     margin: 0px;
     background: linear-gradient(180deg, rgba(80, 80, 80, 1) 23%, rgba(46, 46, 46, 1) 80%);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    
+
 }

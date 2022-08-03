@@ -1,45 +1,51 @@
-
-.container_texto_animado{
-    margin-top: 20px;
-    display: flex;
-    width: 800px;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    color: $color-primario;
-    justify-content: flex-start;
-    margin-left: 20px;
-
+.typed_wrap {
+	display: block;
+	width: 290px;
+	height: auto;
+	padding: 30px;
+	color: $color-primario;
+	/*centers it in the .banner*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
-.container_texto_animado .text{
-    position: relative;
-    color:rgba(80, 80, 80, 1) 23%;
-    font-size: 30px;
-    font-weight: 600;
-    margin-left: 10px;
 
+.typed_wrap h1 {
+	display: inline;
 }
-.container_texto_animado .text.first-text{
-    color:$color-white;
 
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
 }
-.text.sec-text:before{
 
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color:rgba(80, 80, 80, 1) ;
-    border-left: 2px solid $color-primario;
-    animation: animate 4s steps(12) infinite;
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
 }
-@keyframes animate{
-    40%, 60%{
-        left: calc(100% + 4px);
-    }
-    100%{
-        left: 0%;
-    }
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

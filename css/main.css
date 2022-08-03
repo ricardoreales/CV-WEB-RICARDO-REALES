@@ -734,43 +734,62 @@ svg circle:nth-child(2) {
         transition: all 0.3s ease-in-out;
         transition-delay: 0.1s; }
 
-.container_texto_animado {
-  margin-top: 20px;
-  display: flex;
-  width: 800px;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
+.typed_wrap {
+  display: block;
+  width: 290px;
+  height: auto;
+  padding: 30px;
   color: #8dc63f;
-  justify-content: flex-start;
-  margin-left: 20px; }
-
-.container_texto_animado .text {
-  position: relative;
-  color: #505050 23%;
-  font-size: 30px;
-  font-weight: 600;
-  margin-left: 10px; }
-
-.container_texto_animado .text.first-text {
-  color: white; }
-
-.text.sec-text:before {
-  content: "";
+  /*centers it in the .banner*/
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #505050;
-  border-left: 2px solid #8dc63f;
-  animation: animate 4s steps(12) infinite; }
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
 
-@keyframes animate {
-  40%, 60% {
-    left: calc(100% + 4px); }
+.typed_wrap h1 {
+  display: inline; }
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+  content: '|';
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor {
+  opacity: 0;
+  display: none; }
+
+/*Custom cursor animation*/
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
   100% {
-    left: 0%; } }
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @media (max-width: 600px) {
   .about_container {
@@ -934,41 +953,22 @@ svg circle:nth-child(2) {
         transition: 0.4s; } }
 
 @media (max-width: 600px) {
-  .container_texto_animado {
-    height: 50px;
-    margin-top: 20px;
-    display: flex;
-    width: 300px;
-    height: 100px;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
+  .typed_wrap {
+    border: 1px solid red;
+    display: block;
+    width: 290px;
+    height: auto;
+    padding: 2px;
     color: #8dc63f;
-    justify-content: flex-start;
-    margin-left: 20px;
-    z-index: 100; }
-  .container_texto_animado .text {
+    /*centers it in the .banner*/
     position: relative;
-    color: #505050 23%;
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 10px; }
-  .container_texto_animado .text.first-text {
-    color: white;
-    margin: 5px; }
-  .text.sec-text:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #3f4040;
-    border-left: 2px solid #8dc63f;
-    animation: animate 4s steps(12) infinite; }
-  @keyframes animate {
-    40%,
-    60% {
-      left: calc(100% + 4px); }
-    100% {
-      left: 0%; } } }
+    top: 17px;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .typed_wrap h1 {
+    display: inline; } }
