@@ -1,3 +1,5 @@
+
+
 function updateprogressBar(progressBar, value) {
     value = Math.round (value)
     const progressFill = progressBar.querySelector(".progress__fill")
@@ -11,7 +13,10 @@ function scrollFunction() {
     const elemProgress = document.querySelectorAll(".progress")
     console.log(scroll)
 
-    if ( scroll > 500 && scroll < 3000 ){
+
+
+
+    if ((screen.width <= 600 && scroll > 300 && scroll < 3000) || (screen.width > 600 && scroll > 150 && scroll < 1000) ){
         elemProgress.forEach(function(element) {
             updateprogressBar(element, element.getAttribute("data-value")) 
         });
@@ -20,6 +25,8 @@ function scrollFunction() {
             updateprogressBar(element,0) 
         });
     }
+
+   
 }
 
 window.onscroll = function() {scrollFunction()}
