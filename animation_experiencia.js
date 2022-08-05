@@ -11,4 +11,3 @@ function animateInView(){
   })
 }
 
-window.onscroll = function() { animateInView() }

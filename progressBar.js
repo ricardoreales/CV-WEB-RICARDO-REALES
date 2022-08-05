@@ -22,10 +22,13 @@ function scrollFunction() {
             updateprogressBar(element,0) 
         });
     }
+
+
+
 }
 
 
-window.onscroll = function() {scrollFunction()}
+window.onscroll = function() { scrollFunction() }
 
 
 
