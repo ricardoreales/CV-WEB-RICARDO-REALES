@@ -12,50 +12,9 @@
 
         h2 {
             margin: 10px;
-            font-size: 1.4rem;
-            width: 300px;
+            font-size: 2rem;
         }
 
-        .container_img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            // display: none;
-            // transform: rotateZ(-14deg);
-
-
-
-            .media_img {
-                overflow: hidden;
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                transform: translate(20%, 0%);
-
-                // display: none;
-
-                // top: -2em;
-                // left: 2em;
-
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    // transform: rotateZ(45deg);
-                    width: 100%;
-                    height: 100%;
-                    // top: 10%;
-                    // left: -10%;
-                    background-image: url("../iconos/iconosMenu-web.svg");
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    opacity: 0.1;
-                    background-position: center 80%;
-                }
-            }
-        }
     }
 
     // ESTILOS DEL BANNER DE CATEGORIA PARA IDIOMAS
@@ -75,7 +34,7 @@
 
         h2 {
             margin: 10px;
-            font-size: 1.4rem;
+            font-size: 2rem;
         }
 
         .container_img {
@@ -91,22 +50,10 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                transform: translate(20%, 0%);
+                
 
 
 
-                &::before {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    background-image: url("../iconos/iconosMenu-idioma.svg");
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    opacity: 0.1;
-                    background-position: center 80%;
-                }
             }
         }
     }
@@ -128,14 +75,14 @@
 
         h2 {
             margin: 10px;
-            font-size: 1.4rem;
+            font-size: 2rem;
         }
 
         .container_img {
             position: absolute;
             width: 100%;
             height: 100%;
-            // transform: rotateZ(-14deg);
+        
 
 
 
@@ -145,25 +92,9 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                // top: -2em;
-                // left: 2em;
+             
 
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    // transform: rotateZ(45deg);
-                    width: 100%;
-                    height: 100%;
-                    // top: 10%;
-                    // left: -10%;
-                    background-image: url("../iconos/iconosMenu-habilidad.svg");
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    opacity: 0.1;
-                    background-position: center 80%;
-                }
+           
             }
         }
     }
@@ -171,12 +102,6 @@
     // ESTILOS DEL BANNER DE CATEGORIA PARA EXPERIENCIA
 
     .banner_icon_experiencia {
-        // width: 300px;
-        // height: 180vh;
-        // overflow: hidden;
-        // position: relative;
-        // background-color: $gris-background;
-
 
         display: flex;
         justify-content: center;
@@ -185,18 +110,17 @@
         overflow: hidden;
         position: relative;
         align-items: center;
-        background-color: $gris-background
+        background-color: $gris-background;
 
         h2 {
             margin: 10px;
-            font-size: 1.4rem;
+            font-size: 2rem;
         }
 
         .container_img {
             position: absolute;
             width: 100%;
             height: 100%;
-            // transform: rotateZ(-14deg);
 
 
 
@@ -206,25 +130,10 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                // top: -2em;
-                // left: 2em;
+             
 
 
-                &::before {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    // transform: rotateZ(45deg);
-                    width: 100%;
-                    height: 100%;
-                    // top: 10%;
-                    // left: -10%;
-                    background-image: url("../iconos/iconosMenu-experiencia.svg");
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    opacity: 0.1;
-                    background-position: center 80%;
-                }
+           
             }
         }
     }
@@ -234,55 +143,22 @@
     // ESTILOS DEL BANNER DE CATEGORIA PARA PORTAFOLIO
 
     .banner_icon_portafolio {
-        width: 300px;
-        height: 70vh;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 15vh;
         overflow: hidden;
         position: relative;
+        align-items: center;
         background-color: $gris-background;
 
         h2 {
             margin: 10px;
-            font-size: 1.4rem;
+            font-size: 2rem;
         }
 
-        .container_img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
 
-            // transform: rotateZ(-14deg);
-
-
-
-            .media_img {
-                overflow: hidden;
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-
-                // top: -2em;
-                // left: 2em;
-
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    // transform: rotateZ(45deg);
-                    width: 100%;
-                    height: 100%;
-                    // top: 10%;
-                    // left: -10%;
-                    background-image: url("../iconos/iconosMenu-portafolio.svg");
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    opacity: 0.1;
-                    background-position: center 80%;
-
-                }
-            }
-        }
+      
     }
 
 }

@@ -34,12 +34,13 @@
       display: flex;
 
       section {
-        background: $gris-3;
+        background: $gris-2;
         border-radius: 5px;
         width: calc(50% - 40px);
         padding: 20px;
         position: relative;
         border: 2px solid $color-white;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
         &:before {
           position: absolute;
