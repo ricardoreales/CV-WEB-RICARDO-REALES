@@ -13,10 +13,7 @@ function scrollFunction() {
     const elemProgress = document.querySelectorAll(".progress")
     console.log(scroll)
 
-
-
-
-    if ((screen.width <= 600 && scroll > 600 && scroll < 3000) || (screen.width > 600 && scroll > 150 && scroll < 1000) ){
+    if ((screen.width <= 600 && scroll > 750 && scroll < 3000) || (screen.width > 600 && scroll > 150 && scroll < 1000) ){
         elemProgress.forEach(function(element) {
             updateprogressBar(element, element.getAttribute("data-value")) 
         });
@@ -25,22 +22,6 @@ function scrollFunction() {
             updateprogressBar(element,0) 
         });
     }
-
-
-
-    if(screen.width <= 600 ){
-        
-        const portafolio1 = document.getElementById("portafolio1")
-        portafolio1.addEventListener('mouseover', function() {
-            console.log('Event triggered')
-        });
-
-        if(scroll > 5500 && scroll < 6800) {
-            portafolio1.dispatchEvent(new MouseEvent('mouseover'));
-        }   
-
-    }
-
 }
 
 

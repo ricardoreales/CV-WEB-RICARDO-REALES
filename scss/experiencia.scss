@@ -127,4 +127,17 @@
     }
   }
 
+  // ESTILOS PARA LA ANIMACION 
+
+  .card_experiencia { 
+    opacity: 0;
+    transform: translatey(100px);
+    transition: all 2s ease;
+}
+
+.animate { 
+    transform: translatey(0px);
+    opacity: 1;
+}
+
 }

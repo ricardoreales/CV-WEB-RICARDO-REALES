@@ -1,3 +1,6 @@
+
+
+
 $(function(){
 	$(".typed").typed({
 		strings: ["DEVELOPER.", "DESIGNER.", "FREELANCER."],
