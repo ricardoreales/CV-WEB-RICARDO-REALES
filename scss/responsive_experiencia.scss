@@ -17,6 +17,12 @@
     }
 
     .wrapper {
+      max-width: 390px;
+      margin: 70px auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+
       .center-line {
         left: 40px;
       }
