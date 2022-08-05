@@ -531,6 +531,9 @@ svg circle:nth-child(2) {
   .habilidades_container .wrap {
     margin: 70px;
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -540,15 +543,19 @@ svg circle:nth-child(2) {
     -webkit-perspective: 800;
     perspective: 800; }
     .habilidades_container .tarjeta-wrap:hover .tarjeta {
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg); }
   .habilidades_container .tarjeta {
     border-radius: 10px;
     width: 250px;
     height: 350px;
     background: #8dc63f;
     position: relative;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: .7s ease;
+    -webkit-transition: .7s ease;
+    -webkit-box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); }
     .habilidades_container .tarjeta h3 {
       text-align: center;
@@ -559,18 +566,29 @@ svg circle:nth-child(2) {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
   .habilidades_container .atras {
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     position: absolute;
     top: 0;
     left: 0;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     padding: 15px;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
     text-align: center;
     color: #fff;
