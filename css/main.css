@@ -525,10 +525,10 @@ svg circle:nth-child(2) {
     text-align: justify; }
   .experiencia_container .card_experiencia {
     opacity: 0;
-    transform: translatey(500px);
-    transition: all 3s ease; }
+    transform: translateY(100px);
+    transition: all 7s ease; }
   .experiencia_container .animate {
-    transform: translatey(0px);
+    transform: translateY(0px);
     opacity: 1; }
 
 .habilidades_container {
