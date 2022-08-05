@@ -29,19 +29,22 @@
     }
 
     .img-responsive1 {
-        height: 110%;
-        transform: translate(-130px);
+        width: 100%;
+        transform: translate(0px);
+
+        
     }
 
     .img-responsive2 {
-        height: 110%;
-        transform: translate(-70px);
+       
+        height: 100%;
+        transform: translate(0px);
     }
     
     .img-responsive3 {
-        height: 110%;
-        
-        transform: translate(-250px);
+        height: 100%;
+        transform: translate(-225px);
+
     }
 
 
@@ -86,16 +89,17 @@
                 }
 
                 .img-responsive1 {
-                    // transform: translateY(-15px);
-                    transform: translate(-130px, -15px);
+                    transform: scale(2) ;
+                    transition: 1.2s cubic-bezier(.61,.27,.4,.96);
+                    
                 }
                 .img-responsive2 {
-                    // transform: translateY(-15px);
-                    transform: translate(-70px, -15px);
+                    transform: scale(2) ;
+                    transition: 1.2s cubic-bezier(.61,.27,.4,.96);
                 }
                 .img-responsive3 {
-                    // transform: translateY(-15px);
-                    transform: translate(-250px, -15px);
+                    transform:translate(-225px) scale(2) ;
+                    transition: 1.2s cubic-bezier(.61,.27,.4,.96);
                 }
 
                 .cards--two__rect {
