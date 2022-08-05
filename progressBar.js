@@ -11,7 +11,7 @@ function updateprogressBar(progressBar, value) {
 function scrollFunction() {
     const scroll = (document.body.scrollTop) ? document.body.scrollTop : document.documentElement.scrollTop
     const elemProgress = document.querySelectorAll(".progress")
-    console.log(scroll)
+    // console.log(scroll)
 
     if ((screen.width <= 600 && scroll > 750 && scroll < 3000) || (screen.width > 600 && scroll > 150 && scroll < 1000) ){
         elemProgress.forEach(function(element) {
@@ -26,9 +26,6 @@ function scrollFunction() {
 
 
 }
-
-
-window.onscroll = function() { scrollFunction() }
 
 
 

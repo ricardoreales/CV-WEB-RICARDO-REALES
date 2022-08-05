@@ -132,7 +132,7 @@
   .card_experiencia { 
     opacity: 0;
     transform: translateY(100px);
-    transition: all 7s ease;
+    transition: all 2s cubic-bezier(0.155, 0.910, 0.695, 0.950);
 }
 
 .animate { 
