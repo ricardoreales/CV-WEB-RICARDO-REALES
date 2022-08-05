@@ -10,7 +10,7 @@
         align-items: center;
         background-color: $gris-background;
 
-        h2{
+        h2 {
             margin: 10px;
             font-size: 1.4rem;
             width: 300px;
@@ -31,7 +31,7 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-            transform: translate(20%, 0%);
+                transform: translate(20%, 0%);
 
                 // display: none;
 
@@ -61,11 +61,7 @@
     // ESTILOS DEL BANNER DE CATEGORIA PARA IDIOMAS
 
     .banner_icon_idiomas {
-        // width: 300px;
-        // height: 60vh;
-        // overflow: hidden;
-        // position: relative;
-        // background-color: $gris-background;
+       
 
 
         display: flex;
@@ -95,21 +91,16 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-            transform: translate(20%, 0%);
+                transform: translate(20%, 0%);
 
-                // top: -2em;
-                // left: 2em;
 
 
                 &::before {
                     content: '';
                     position: absolute;
                     display: block;
-                    // transform: rotateZ(45deg);
                     width: 100%;
                     height: 100%;
-                    // top: 10%;
-                    // left: -10%;
                     background-image: url("../iconos/iconosMenu-idioma.svg");
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -125,10 +116,14 @@
     // ESTILOS DEL BANNER DE CATEGORIA PARA HABILIDADES
 
     .banner_icon_habilidades {
-        width: 300px;
-        height: 90vh;
+
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 15vh;
         overflow: hidden;
         position: relative;
+        align-items: center;
         background-color: $gris-background;
 
         h2 {
@@ -176,11 +171,21 @@
     // ESTILOS DEL BANNER DE CATEGORIA PARA EXPERIENCIA
 
     .banner_icon_experiencia {
-        width: 300px;
-        height: 180vh;
+        // width: 300px;
+        // height: 180vh;
+        // overflow: hidden;
+        // position: relative;
+        // background-color: $gris-background;
+
+
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 15vh;
         overflow: hidden;
         position: relative;
-        background-color: $gris-background;
+        align-items: center;
+        background-color: $gris-background
 
         h2 {
             margin: 10px;

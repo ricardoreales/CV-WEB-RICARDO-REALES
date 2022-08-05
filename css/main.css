@@ -824,7 +824,8 @@ svg circle:nth-child(2) {
     .about_container .container_primario {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      margin-bottom: 40px; }
       .about_container .container_primario .datos_container {
         display: flex;
         width: 400px;
@@ -994,7 +995,8 @@ svg circle:nth-child(2) {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100vw; }
+      width: 100vw;
+      margin-bottom: 40px; }
       .conocimientos_container .conocimientos .progresBar__container {
         display: flex;
         flex-direction: column;
@@ -1093,10 +1095,13 @@ svg circle:nth-child(2) {
           opacity: 0.1;
           background-position: center 80%; }
   .banner_icon_habilidades {
-    width: 300px;
-    height: 90vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 15vh;
     overflow: hidden;
     position: relative;
+    align-items: center;
     background-color: #191919; }
     .banner_icon_habilidades h2 {
       margin: 10px;
@@ -1123,14 +1128,16 @@ svg circle:nth-child(2) {
           opacity: 0.1;
           background-position: center 80%; }
   .banner_icon_experiencia {
-    width: 300px;
-    height: 180vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 15vh;
     overflow: hidden;
     position: relative;
-    background-color: #191919; }
-    .banner_icon_experiencia h2 {
-      margin: 10px;
-      font-size: 1.4rem; }
+    align-items: center;
+    background-color: #191919 h2;
+      background-color-margin: 10px;
+      background-color-font-size: 1.4rem; }
     .banner_icon_experiencia .container_img {
       position: absolute;
       width: 100%;
@@ -1191,44 +1198,90 @@ svg circle:nth-child(2) {
     margin: 0px;
     background: linear-gradient(180deg, #505050 23%, #2e2e2e 80%);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
-  .container {
+    .idiomas_container .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      width: 100vw;
+      margin-bottom: 40px; }
+      .idiomas_container .container .cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        text-align: center;
+        transform: translate(0%, 0%);
+        margin: 40px 0 80px 0px;
+        padding: 20px;
+        border: 2px solid #414042;
+        box-shadow: rgba(234, 234, 234, 0.25) 0px 30px 60px -12px inset, rgba(81, 81, 81, 0.3) 0px 18px 36px -18px inset; } }
+
+@media (max-width: 600px) {
+  .habilidades_container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    width: 100vw; }
-    .container .cart {
+    width: 100vw;
+    margin: 0px;
+    background: linear-gradient(180deg, #505050 23%, #2e2e2e 80%);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
+    .habilidades_container .wrap {
+      margin: 70px;
       display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center;
-      align-items: center;
-      border-radius: 100%;
-      text-align: center;
-      transform: translate(0%, 0%);
-      margin: 40px;
-      padding: 20px;
-      border: 2px solid #414042;
-      box-shadow: rgba(234, 234, 234, 0.25) 0px 30px 60px -12px inset, rgba(81, 81, 81, 0.3) 0px 18px 36px -18px inset; }
-  .porcent {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: #191919;
-    z-index: 3;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
-    .porcent .number {
+      align-items: center; } }
+
+@media (max-width: 600px) {
+  .experiencia_container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0px;
+    background: linear-gradient(180deg, #505050 23%, #2e2e2e 80%);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
+    .experiencia_container .experiencia {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .experiencia_container .wrapper .center-line {
+      left: 40px; }
+    .experiencia_container .wrapper .row {
+      margin: 30px 0 3px 60px; }
+      .experiencia_container .wrapper .row section {
+        width: 100%; }
+    .experiencia_container .row-1 section:before {
+      left: -7px; }
+    .experiencia_container .row-1 section .icon {
+      left: -60px; }
+    .experiencia_container .row-2 section:before {
+      left: -7px; }
+    .experiencia_container .row-2 section .icon {
+      top: 15px;
+      left: -60px; }
+    .experiencia_container .row section .icon {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      background: #8dc63f;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px white, inset 0 5px 0 rgba(0, 0, 0, 0.08), 0 5px 0 4px rgba(0, 0, 0, 0.05); }
+    .experiencia_container .row section .details {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%; }
-      .porcent .number h2 {
-        font-weight: 700;
-        font-size: 40px; }
-        .porcent .number h2 span {
-          color: white; } }
+      justify-content: space-between;
+      align-content: flex-start; }
+      .experiencia_container .row section .details .title {
+        font-size: 20px;
+        font-weight: 600;
+        width: 170px; }
+      .experiencia_container .row section .details span {
+        font-size: 16px; }
+    .experiencia_container .row section p {
+      margin: 10px 0 17px 0;
+      text-align: justify; } }

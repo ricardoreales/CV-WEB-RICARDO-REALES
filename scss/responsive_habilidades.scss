@@ -1,0 +1,22 @@
+@media (max-width: 600px) {
+    .habilidades_container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        @include contenedor-section_responsive;
+
+
+        .wrap {
+
+            margin: 70px;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}
