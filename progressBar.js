@@ -26,8 +26,23 @@ function scrollFunction() {
         });
     }
 
-   
+
+
+    if(screen.width <= 600 ){
+        
+        const portafolio1 = document.getElementById("portafolio1")
+        portafolio1.addEventListener('mouseover', function() {
+            console.log('Event triggered')
+        });
+
+        if(scroll > 5500 && scroll < 6800) {
+            portafolio1.dispatchEvent(new MouseEvent('mouseover'));
+        }   
+
+    }
+
 }
+
 
 window.onscroll = function() {scrollFunction()}
 

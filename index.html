@@ -278,59 +278,84 @@
         </div>
 
 
-        <div class="wrap">
-            <div class="tarjeta-wrap">
-                <div class="tarjeta">
-                    <h3>CREATIVIDAD</h3>
-                    <div class="adelante card1"></div>
-                    <div class="atras">
-                        <p>
-                            Tengo un modo de pensamiento global, me enfoco en todos los aspectos
-                            del diseño de un proyecto, englobo el pensamiento abstracto y lógico
-                            al mismo tiempo, gracias a tener la suerte ser mecánico industrial
-                            universitario y amante de el arte en todas sus expresiones haciendo
-                            hincapié en el arte visual a través del diseño grafico.
-                        </p>
+        <div class="cards_container">
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <div> <img src="./iconos/iconos_habilidades-02.svg" alt="" class="icono_skill" /></div>
+                        <h2>CREATIVIDAD</h2>
                     </div>
-                </div>
-            </div>
-            <div class="tarjeta-wrap">
-                <div class="tarjeta">
-                    <h3>RESPONSABILIDAD</h3>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
 
-                    <div class="adelante card2"></div>
-                    <div class="atras">
-                        <p>
-                            Tantos años de experiencia trabajando en equipo me hacen altamente
-                            consiente de la importancia de cumplir con los objetivos en tiempo y
-                            forma para poder alcanzar con éxito las metas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="tarjeta-wrap">
-                <div class="tarjeta">
-                    <h3>ADAPTACIÓN</h3>
+                                <h2>CREATIVIDAD</h2>
+                            </div>
+                            <div class="card__body">
 
-                    <div class="adelante card3"></div>
-                    <div class="atras">
-                        <p>
-                            Siempre estoy dentro de un proceso de aprendizaje estudiando,
-                            haciendo cursos, diplomados y mi preferido el ser autodidacta. Soy
-                            amante de la tecnología y sus aplicaciones a la vida diaria, el
-                            mundo cambia y hay que adaptarse a el cada día.
-                        </p>
+                                <p> Tengo un modo de pensamiento global, me enfoco en todos los aspectos
+                                    del diseño de un proyecto, englobo el pensamiento abstracto y lógico
+                                    al mismo tiempo, gracias a tener la suerte ser mecánico industrial
+                                    universitario y amante de el arte en todas sus expresiones haciendo
+                                    hincapié en el arte visual a través del diseño grafico.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <div> <img src="./iconos/iconos_habilidades-04.svg" alt="" class="icono_skill" /></div>
+                        <h2>RESPONSABILIDAD</h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+
+                                <h2>RESPONSABILIDAD</h2>
+                            </div>
+                            <div class="card__body">
+
+                                <p> Tantos años de experiencia trabajando en equipo me hacen altamente consiente de la importancia de cumplir con los objetivos en tiempo y forma para poder alcanzar con éxito las metas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <div> <img src="./iconos/iconos_habilidades-03.svg" alt="" class="icono_skill" /></div>
+                        <h2>ADAPTACIÓN</h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+
+                                <h2>ADAPTACIÓN</h2>
+                            </div>
+                            <div class="card__body">
+
+                                <p> Siempre estoy dentro de un proceso de aprendizaje estudiando, haciendo cursos, diplomados y mi preferido el ser autodidacta. Soy amante de la tecnología y sus aplicaciones a la vida diaria, el mundo cambia y hay que adaptarse a el cada día.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+       
     </div>
 
 
 
     <!-- EXPERIENCIA LABORAL -->
 
-   
+
     <div class="experiencia_container">
 
         <div class="banner_icon_experiencia">
@@ -340,7 +365,7 @@
             </section>
         </div>
 
-        <section  class="experiencia">
+        <section class="experiencia">
 
             <div class="wrapper">
                 <div class="center-line"></div>
@@ -411,7 +436,7 @@
     </div>
 
 
-<!-- PORTAFOLIO -->
+    <!-- PORTAFOLIO -->
 
     <div class="portafolio_container">
 
@@ -422,11 +447,11 @@
             </section>
         </div>
 
-       
+
 
         <a target="_blank" href="https://gimnasio-gym-smart.netlify.app/">
             <div class="card__collection clear-fix">
-                <div class="cards cards--two">
+                <div id="portafolio1" class="cards cards--two">
                     <img src="imagenes/gymsmartfoto.JPG" class="img-responsive1" alt="Cards Image">
                     <span class="cards--two__rect"></span>
 
@@ -479,7 +504,7 @@
                 </div>
             </div>
         </a>
-    </div> 
+    </div>
 
 
 
@@ -489,6 +514,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
     <script src="./tex_animado.js"></script>
+    <script src="./flip_card.js"></script>
 </body>
 
 </html>

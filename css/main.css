@@ -529,91 +529,82 @@ svg circle:nth-child(2) {
   margin: 30px 60px 30px 60px;
   background: linear-gradient(180deg, #505050 23%, #2e2e2e 80%);
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
-  .habilidades_container .wrap {
-    margin: 70px;
+  .habilidades_container .cards_container {
     display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .habilidades_container .tarjeta-wrap {
-    margin: 10px;
-    -webkit-perspective: 800;
-    perspective: 800; }
-    .habilidades_container .tarjeta-wrap:hover .tarjeta {
-      transform: rotateY(180deg);
-      -webkit-transform: rotateY(180deg); }
-  .habilidades_container .tarjeta {
-    border-radius: 10px;
-    width: 250px;
-    height: 350px;
-    background: #8dc63f;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    transition: .7s ease;
-    -webkit-transition: .7s ease;
-    -webkit-box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); }
-    .habilidades_container .tarjeta h3 {
-      text-align: center;
-      transform: translate(0, 40px); }
-  .habilidades_container .adelante {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; }
-  .habilidades_container .atras {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    padding: 15px;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
     align-items: center;
-    text-align: center;
-    color: #fff;
-    font-family: "open sans";
-    background: #4f8702;
-    border-radius: 10px;
-    box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); }
-    .habilidades_container .atras P {
+    margin-left: 50px; }
+    .habilidades_container .cards_container .card {
+      margin: 20px;
+      width: 250px;
+      height: 460px; }
+    .habilidades_container .cards_container .card__inner {
+      width: 100%;
+      height: 100%;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      position: relative; }
+    .habilidades_container .cards_container .card__inner.is-flipped {
+      transform: rotateY(180deg); }
+    .habilidades_container .cards_container .card__face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2); }
+    .habilidades_container .cards_container .card__face--front {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #8dc63f;
+      background: radial-gradient(circle, #8dc63f 23%, #4f8702 80%); }
+      .habilidades_container .cards_container .card__face--front h2 {
+        font-size: 20px; }
+      .habilidades_container .cards_container .card__face--front .icono_skill {
+        display: block;
+        margin: 0 auto 30px;
+        width: 100px;
+        width: 100px;
+        height: 100px; }
+    .habilidades_container .cards_container .card__face--back {
+      background-color: #4f8702;
+      transform: rotateY(180deg); }
+    .habilidades_container .cards_container .card__content {
+      width: 100%;
+      height: 100%; }
+    .habilidades_container .cards_container .card__header {
+      position: relative;
+      padding: 30px 30px 40px; }
+      .habilidades_container .cards_container .card__header:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #8dc63f;
+        z-index: -1;
+        border-radius: 0px 0px 50% 0px; }
+      .habilidades_container .cards_container .card__header h2 {
+        font-size: 1rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center; }
+    .habilidades_container .cards_container .card__body {
+      padding: 10px 30px 10px 30px;
       text-align: justify; }
-  .habilidades_container .card1 {
-    background-image: url("../iconos/iconos_habilidades-02.svg");
-    background-size: 110px;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .habilidades_container .card2 {
-    background-image: url("../iconos/iconos_habilidades-04.svg");
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .habilidades_container .card3 {
-    background-image: url("../iconos/iconos_habilidades-03.svg");
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-position: center; }
+      .habilidades_container .cards_container .card__body h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 15px; }
+      .habilidades_container .cards_container .card__body p {
+        font-size: 1rem;
+        line-height: 1.4; }
 
 .portafolio_container {
   display: flex;
@@ -1171,15 +1162,83 @@ svg circle:nth-child(2) {
     margin: 0px;
     background: linear-gradient(180deg, #505050 23%, #2e2e2e 80%);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
-    .habilidades_container .wrap {
-      margin: 70px;
+    .habilidades_container .cards_container {
       display: flex;
       flex-direction: column;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      align-items: center; } }
+      align-items: center;
+      margin-left: 0px; }
+      .habilidades_container .cards_container .card {
+        margin: 20px;
+        width: 250px;
+        height: 460px; }
+      .habilidades_container .cards_container .card__inner {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        position: relative; }
+      .habilidades_container .cards_container .card__inner.is-flipped {
+        transform: rotateY(180deg); }
+      .habilidades_container .cards_container .card__face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2); }
+      .habilidades_container .cards_container .card__face--front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #8dc63f;
+        background: radial-gradient(circle, #8dc63f 23%, #4f8702 80%); }
+        .habilidades_container .cards_container .card__face--front h2 {
+          font-size: 20px; }
+        .habilidades_container .cards_container .card__face--front .icono_skill {
+          display: block;
+          margin: 0 auto 30px;
+          width: 100px;
+          width: 100px;
+          height: 100px; }
+      .habilidades_container .cards_container .card__face--back {
+        background-color: #4f8702;
+        transform: rotateY(180deg); }
+      .habilidades_container .cards_container .card__content {
+        width: 100%;
+        height: 100%; }
+      .habilidades_container .cards_container .card__header {
+        position: relative;
+        padding: 30px 30px 40px; }
+        .habilidades_container .cards_container .card__header:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #8dc63f;
+          z-index: -1;
+          border-radius: 0px 0px 50% 0px; }
+        .habilidades_container .cards_container .card__header h2 {
+          font-size: 1rem;
+          font-weight: 900;
+          text-transform: uppercase;
+          text-align: center; }
+      .habilidades_container .cards_container .card__body {
+        padding: 10px 30px 10px 30px;
+        text-align: justify; }
+        .habilidades_container .cards_container .card__body h3 {
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 15px; }
+        .habilidades_container .cards_container .card__body p {
+          font-size: 1rem;
+          line-height: 1.4; } }
 
 @media (max-width: 600px) {
   .experiencia_container {
