@@ -29,21 +29,19 @@
     }
 
     .img-responsive1 {
-        width: 100%;
-        transform: translate(0px);
-
-        
+        height: 100%;
+        transform: translate(-20px);
     }
 
     .img-responsive2 {
        
         height: 100%;
-        transform: translate(0px);
+        transform: translate(-50px);
     }
     
     .img-responsive3 {
         height: 100%;
-        transform: translate(-225px);
+        transform: translate(-260px);
 
     }
 
@@ -54,9 +52,10 @@
         padding: 10px;
         font-family: "Do Hyeon", sans-serif;
         overflow: hidden;
+        margin-left: 7px;
 
         .cards {
-            width: 280px;
+            width: 200px;
             height: 400px;
             display: block;
             background-size: cover;
@@ -65,7 +64,7 @@
             position: relative;
             overflow: hidden;
             background-position: center;
-            margin: 10px;
+            margin: 5px;
         }
 
         .cards--two {
@@ -89,16 +88,16 @@
                 }
 
                 .img-responsive1 {
-                    transform: scale(2) ;
+                    transform:translate(-20px) scale(2) ;
                     transition: 1.2s cubic-bezier(.61,.27,.4,.96);
                     
                 }
                 .img-responsive2 {
-                    transform: scale(2) ;
+                    transform:translate(-50px) scale(2) ;
                     transition: 1.2s cubic-bezier(.61,.27,.4,.96);
                 }
                 .img-responsive3 {
-                    transform:translate(-225px) scale(2) ;
+                    transform:translate(-270px) scale(2) ;
                     transition: 1.2s cubic-bezier(.61,.27,.4,.96);
                 }
 

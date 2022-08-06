@@ -416,7 +416,7 @@ svg circle:nth-child(2) {
 
 .banner_icon_portafolio {
   width: 300px;
-  height: 70vh;
+  height: 75vh;
   overflow: hidden;
   position: relative;
   background-color: #191919; }
@@ -635,22 +635,23 @@ svg circle:nth-child(2) {
     clear: both;
     content: ""; }
   .portafolio_container .img-responsive1 {
-    width: 100%;
-    transform: translate(0px); }
+    height: 100%;
+    transform: translate(-20px); }
   .portafolio_container .img-responsive2 {
     height: 100%;
-    transform: translate(0px); }
+    transform: translate(-50px); }
   .portafolio_container .img-responsive3 {
     height: 100%;
-    transform: translate(-225px); }
+    transform: translate(-260px); }
   .portafolio_container .card__collection {
     position: relative;
     display: block;
     padding: 10px;
     font-family: "Do Hyeon", sans-serif;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-left: 7px; }
     .portafolio_container .card__collection .cards {
-      width: 280px;
+      width: 200px;
       height: 400px;
       display: block;
       background-size: cover;
@@ -659,7 +660,7 @@ svg circle:nth-child(2) {
       position: relative;
       overflow: hidden;
       background-position: center;
-      margin: 10px; }
+      margin: 5px; }
     .portafolio_container .card__collection .cards--two {
       position: relative;
       backface-visibility: hidden; }
@@ -675,13 +676,13 @@ svg circle:nth-child(2) {
       .portafolio_container .card__collection .cards--two:hover p {
         left: 8%; }
       .portafolio_container .card__collection .cards--two:hover .img-responsive1 {
-        transform: scale(2);
+        transform: translate(-20px) scale(2);
         transition: 1.2s cubic-bezier(0.61, 0.27, 0.4, 0.96); }
       .portafolio_container .card__collection .cards--two:hover .img-responsive2 {
-        transform: scale(2);
+        transform: translate(-50px) scale(2);
         transition: 1.2s cubic-bezier(0.61, 0.27, 0.4, 0.96); }
       .portafolio_container .card__collection .cards--two:hover .img-responsive3 {
-        transform: translate(-225px) scale(2);
+        transform: translate(-270px) scale(2);
         transition: 1.2s cubic-bezier(0.61, 0.27, 0.4, 0.96); }
       .portafolio_container .card__collection .cards--two:hover .cards--two__rect {
         top: 75%; }
