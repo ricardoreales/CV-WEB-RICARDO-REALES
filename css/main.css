@@ -15,7 +15,7 @@
     .about_container .container_foto_perfil .container_nombre {
       position: relative;
       top: 450px;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(1, 1, 1, 0.7);
       border-radius: 10px;
       height: 80px; }
   .about_container .container_primario {
@@ -139,7 +139,8 @@
       .about_container .container_primario .btnc_container .btn_pricipal {
         color: white;
         font-weight: bold;
-        width: 150px;
+        width: 170px;
+        text-align: center;
         border-radius: 10PX;
         margin-bottom: 1rem;
         background-color: #8dc63f;
@@ -174,6 +175,8 @@ html {
   text-decoration: none;
   list-style: none;
   box-sizing: border-box; }
+  * a {
+    color: white; }
 
 .conocimientos_container {
   display: flex;
@@ -646,6 +649,9 @@ svg circle:nth-child(2) {
   .portafolio_container .img-responsive3 {
     height: 100%;
     transform: translate(-260px); }
+  .portafolio_container .img-responsive4 {
+    height: 100%;
+    transform: translate(0px); }
   .portafolio_container .card__collection {
     position: relative;
     display: block;
@@ -686,6 +692,9 @@ svg circle:nth-child(2) {
         transition: 1.2s cubic-bezier(0.61, 0.27, 0.4, 0.96); }
       .portafolio_container .card__collection .cards--two:hover .img-responsive3 {
         transform: translate(-270px) scale(2);
+        transition: 1.2s cubic-bezier(0.61, 0.27, 0.4, 0.96); }
+      .portafolio_container .card__collection .cards--two:hover .img-responsive4 {
+        transform: scale(2);
         transition: 1.2s cubic-bezier(0.61, 0.27, 0.4, 0.96); }
       .portafolio_container .card__collection .cards--two:hover .cards--two__rect {
         top: 75%; }
@@ -837,6 +846,11 @@ svg circle:nth-child(2) {
       height: 650px;
       width: 100vw;
       margin: 0px; }
+      .about_container .container_foto_perfil .container_nombre {
+        position: relative;
+        top: 540px;
+        border-radius: 10px;
+        height: 80px; }
     .about_container .container_primario {
       display: flex;
       flex-direction: column;
