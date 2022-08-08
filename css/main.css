@@ -8,13 +8,16 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: url("../imagenes/perfil foto -032.jpg");
+    background-image: url("../imagenes/fotoperfilricardo.jpg");
     background-size: cover;
     background-position: center;
     width: 100vw; }
     .about_container .container_foto_perfil .container_nombre {
       position: relative;
-      top: 400px; }
+      top: 450px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      height: 80px; }
   .about_container .container_primario {
     display: flex;
     flex-direction: column;
@@ -829,19 +832,11 @@ svg circle:nth-child(2) {
     .about_container .container_foto_perfil {
       display: flex;
       justify-content: center;
-      background-image: url("../imagenes/perfil foto -032.jpg");
       background-size: cover;
       background-position: center;
       height: 650px;
       width: 100vw;
       margin: 0px; }
-      .about_container .container_foto_perfil .container_nombre {
-        position: relative;
-        top: 500px;
-        width: 300px;
-        height: 80px; }
-        .about_container .container_foto_perfil .container_nombre h2 {
-          color: #8dc63f; }
     .about_container .container_primario {
       display: flex;
       flex-direction: column;
@@ -889,85 +884,6 @@ svg circle:nth-child(2) {
             cursor: pointer; }
             .about_container .container_primario .menu_container .style_menu:hover .icon_menu {
               background-color: #4f8702; }
-            .about_container .container_primario .menu_container .style_menu:hover h3::after {
-              width: 100%;
-              left: 0; }
-          .about_container .container_primario .menu_container .style_menu:active .icon_menu {
-            transform: scale(0.9);
-            transition: 0.4s; }
-          .about_container .container_primario .menu_container .style_menu:active h3::after {
-            width: 0%;
-            left: 50%;
-            transition: 0.4s; }
-          .about_container .container_primario .menu_container .style_menu .icon_menu {
-            width: 100px;
-            border-radius: 10PX;
-            margin-bottom: 1rem;
-            background-color: #8dc63f;
-            margin: 0 -.25rem;
-            padding: 0 .25rem;
-            transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-            box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); }
-          .about_container .container_primario .menu_container .style_menu h3 {
-            margin-top: 10px;
-            position: relative; }
-            .about_container .container_primario .menu_container .style_menu h3::after {
-              position: absolute;
-              content: "";
-              width: 0%;
-              height: 4px;
-              background-color: #8dc63f;
-              left: 50%;
-              bottom: -10px;
-              transition: all 0.4s ease-in-out; }
-      .about_container .container_primario .redes_Container {
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        justify-content: space-around;
-        width: 300px; }
-        .about_container .container_primario .redes_Container .redes {
-          display: flex; }
-          .about_container .container_primario .redes_Container .redes .icono_linkedin {
-            box-shadow: inset 0 0 0 0 #0505fa;
-            margin: 0 -.25rem;
-            padding: 0 .25rem;
-            transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
-            .about_container .container_primario .redes_Container .redes .icono_linkedin:hover {
-              box-shadow: inset 100px 0 0 0 #07176e; }
-            .about_container .container_primario .redes_Container .redes .icono_linkedin img {
-              width: 29px;
-              margin: 15px; }
-          .about_container .container_primario .redes_Container .redes .icono_github {
-            box-shadow: inset 0 0 0 0 #a600ff;
-            margin: 0 -.25rem;
-            padding: 0 .25rem;
-            transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
-            .about_container .container_primario .redes_Container .redes .icono_github:hover {
-              box-shadow: inset 0 100px 0 0 #7f00df; }
-            .about_container .container_primario .redes_Container .redes .icono_github img {
-              width: 29px;
-              margin: 15px; }
-          .about_container .container_primario .redes_Container .redes .icono_facebook {
-            box-shadow: inset 0 0 0 0 #62d5ff;
-            margin: 0 -.25rem;
-            padding: 0 .25rem;
-            transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
-            .about_container .container_primario .redes_Container .redes .icono_facebook:hover {
-              box-shadow: inset -100px 0 0 0 #1051b2; }
-            .about_container .container_primario .redes_Container .redes .icono_facebook img {
-              width: 29px;
-              margin: 15px; }
-          .about_container .container_primario .redes_Container .redes .icono_whatsapp {
-            box-shadow: inset 0 0 0 0 #b8cc00;
-            margin: 0 -.25rem;
-            padding: 0 .25rem;
-            transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
-            .about_container .container_primario .redes_Container .redes .icono_whatsapp:hover {
-              box-shadow: inset 0 -100px 0 0 #30a800; }
-            .about_container .container_primario .redes_Container .redes .icono_whatsapp img {
-              width: 29px;
-              margin: 15px; }
     .about_container .btn_pricipal {
       color: white;
       font-weight: bold;

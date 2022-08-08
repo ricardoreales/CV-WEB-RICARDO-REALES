@@ -7,7 +7,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        background-image: url("../imagenes/perfil\ foto\ -032.jpg");
+        background-image: url("../imagenes/fotoperfilricardo.jpg");
         background-size: cover;
         background-position: center;
         width: 100vw;
@@ -16,7 +16,10 @@
         // background-position: 50% 100%;
         .container_nombre {
             position: relative;
-            top: 400px;
+            top: 450px;
+            background: rgba(255,255,255,0.2) ;
+            border-radius: 10px;
+            height: 80px;
 
 
         }
