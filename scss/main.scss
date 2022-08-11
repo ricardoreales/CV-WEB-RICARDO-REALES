@@ -9,8 +9,9 @@
         justify-content: center;
         text-align: center;
         background-image: url("../imagenes/fotoperfilricardo.jpg");
-        background-size: cover;
+        background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
         width: 100vw;
 
 
